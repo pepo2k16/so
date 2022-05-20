@@ -1,0 +1,10 @@
+## Se indica el tipo de interface (veth igual al tipo de interface visto en
+lxc.net.0.type=veth
+## Un extremo de la interface va en el container y el otro en el bridge brso
+lxc.net.0.link=brso1
+## Levantamos la interface
+lxc.net.0.flags = up
+## Definimos la dirección MAC
+lxc.net.0.hwaddr = 4a:49:43:49:79:bf
+## Definimos la dirección IPv4
+lxc.net.0.ipv4.address = 172.16.2.10/24
